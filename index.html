@@ -1,0 +1,1904 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>Introduction to Python Programming</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/ntnuerc.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <script src="https://daybrush.com/scenejs/release/latest/dist/scene.min.js"></script>
+		
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <script src="js/ntnu.js"></script>
+    </head>
+    <body>
+        <div class="reveal">
+        <div class="slides">
+            
+<section id="first" data-state="first">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+
+<h1> Introduction to Python Programming</h1>
+
+   <div class="author" style="text-align:center;">
+    
+<p>
+      Jacky Baltes<br>
+      National Taiwan Normal University<br>
+      Taipei, Taiwan<br>
+      <a href="mailto:jacky.baltes@ntnu.edu.tw">jacky.baltes@ntnu.edu.tw</a><br>
+</p>
+
+   </div>
+   <div class="date">
+    09 March 2020
+   </div>
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-70feca27-7b65-4277-8613-b36dd9717bbd" ><span id="id-70feca27-7b65-4277-8613-b36dd9717bbd"><img id="img-id-70feca27-7b65-4277-8613-b36dd9717bbd"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-82973f8b-bbc3-4139-9974-6e47ccb5421c" ><span id="id-82973f8b-bbc3-4139-9974-6e47ccb5421c"><img id="img-id-82973f8b-bbc3-4139-9974-6e47ccb5421c" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="background" data-state="background">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="python-programming-language">
+<h1 class="title">Python Programming Language</h1>
+<div class="jb-text docutils container">
+<p><strong>Python</strong> is a general-purpose programming language</p>
+<p>Developed by Guido von Rossum in 1991</p>
+<p>Interpreted, high-level, multi-paradigm</p>
+<ul class="simple">
+<li>Imperative programming</li>
+<li>Object-oriented programming</li>
+<li>Some functional programming features</li>
+</ul>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-4515b4a0-c672-436c-b8c0-8865e2da1dfa" ><span id="id-4515b4a0-c672-436c-b8c0-8865e2da1dfa"><img id="img-id-4515b4a0-c672-436c-b8c0-8865e2da1dfa"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-dcc4f891-f7ed-4e5a-a84c-e3d379c59c76" ><span id="id-dcc4f891-f7ed-4e5a-a84c-e3d379c59c76"><img id="img-id-dcc4f891-f7ed-4e5a-a84c-e3d379c59c76" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb "Python was not named after the snake, but after Monty Python Flying Circus"
+jb "A brilliant comedy group from Britain."
+</aside>
+
+
+
+</section>
+<section id="slide_00004_frag_00001" data-state="slide_00004_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="imperative-programming">
+<h1 class="title">Imperative Programming</h1>
+<div class="jb-text jb-small docutils container">
+<p>Data types, variables, and typing</p>
+<blockquote>
+<ul class="simple">
+<li>Primitive data types: boolean, int, float, string, lists, and dict</li>
+<li>Dynamic typing</li>
+</ul>
+</blockquote>
+<p>Sequence</p>
+<blockquote>
+<ul class="simple">
+<li>One statement after another</li>
+<li>No implicit parallelism</li>
+</ul>
+</blockquote>
+<p>Iteration/Loops</p>
+<blockquote>
+<ul class="simple">
+<li>for-each loops</li>
+<li>while</li>
+</ul>
+</blockquote>
+<p>Selection/Conditionals</p>
+<blockquote>
+<ul class="simple">
+<li>if .. elif .. else</li>
+</ul>
+</blockquote>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-4064cd6c-e3b4-49cb-8db7-95d8bfa6e2e4" ><span id="id-4064cd6c-e3b4-49cb-8db7-95d8bfa6e2e4"><img id="img-id-4064cd6c-e3b4-49cb-8db7-95d8bfa6e2e4"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-6edd5cf8-15a0-4312-9945-8990e16cf427" ><span id="id-6edd5cf8-15a0-4312-9945-8990e16cf427"><img id="img-id-6edd5cf8-15a0-4312-9945-8990e16cf427" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00005_frag_00001" data-state="slide_00005_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Data types: Boolean, Integers, Floats, Strings </span>
+<span style="color: #408080; font-style: italic"># Lists, and Dictionaries</span>
+<span style="color: #408080; font-style: italic"># Python is a dynamically typed language</span>
+
+x <span style="color: #666666">=</span> <span style="color: #008000">True</span>
+y <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Joe&quot;</span>
+z <span style="color: #666666">=</span> <span style="color: #666666">12.3</span>
+
+<span style="color: #408080; font-style: italic"># No need to specify data type for variable declaration</span>
+<span style="color: #408080; font-style: italic"># float z = 12.3 (in C++)</span>
+
+z <span style="color: #666666">=</span> [ <span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span> ]
+<span style="color: #408080; font-style: italic"># Now z is a list</span>
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-3c8cef72-17cb-487f-8206-ebcc10f3e4ca" ><span id="id-3c8cef72-17cb-487f-8206-ebcc10f3e4ca"><img id="img-id-3c8cef72-17cb-487f-8206-ebcc10f3e4ca"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-c176f133-566e-4a0f-9239-05374386a584" ><span id="id-c176f133-566e-4a0f-9239-05374386a584"><img id="img-id-c176f133-566e-4a0f-9239-05374386a584" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00006_frag_00001" data-state="slide_00006_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Type of variable only is checked when executed</span>
+
+x <span style="color: #666666">=</span> <span style="color: #666666">12</span>
+y <span style="color: #666666">=</span> <span style="color: #666666">45</span>
+<span style="color: #008000; font-weight: bold">print</span>(x<span style="color: #666666">+</span>y)
+
+x <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;Hello&quot;</span>
+<span style="color: #008000; font-weight: bold">print</span>(x<span style="color: #666666">+</span>x)
+
+<span style="color: #408080; font-style: italic">#print(x+y)</span>
+<span style="color: #408080; font-style: italic"># Type error with Traceback</span>
+<span style="color: #408080; font-style: italic">#---------------------------------------------------------------------------</span>
+<span style="color: #408080; font-style: italic">#TypeError                                 Traceback (most recent call last)</span>
+<span style="color: #408080; font-style: italic">#&lt;ipython-input-15-345374ad9e23&gt; in &lt;module&gt;()</span>
+<span style="color: #408080; font-style: italic">#      9 print(x+x)</span>
+<span style="color: #408080; font-style: italic">#     10 </span>
+<span style="color: #408080; font-style: italic">#---&gt; 11 print(x+y)</span>
+<span style="color: #408080; font-style: italic">#</span>
+<span style="color: #408080; font-style: italic">#TypeError: must be str, not int</span>
+<span style="color: #008000; font-weight: bold">print</span>( x <span style="color: #666666">+</span> <span style="color: #008000">str</span>(y) )
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-85982834-212c-44a9-8555-64c3729049d1" ><span id="id-85982834-212c-44a9-8555-64c3729049d1"><img id="img-id-85982834-212c-44a9-8555-64c3729049d1"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-86e5462c-ed86-42fe-afdb-898c5cc9a716" ><span id="id-86e5462c-ed86-42fe-afdb-898c5cc9a716"><img id="img-id-86e5462c-ed86-42fe-afdb-898c5cc9a716" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00007_frag_00001" data-state="slide_00007_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div style="font-size:0.5em">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Lists are indicated by [ ]</span>
+lst <span style="color: #666666">=</span> [ <span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span>, <span style="color: #666666">34.0</span>, <span style="color: #666666">45.9</span>, <span style="color: #BA2121">&quot;Joe&quot;</span>, <span style="color: #BA2121">&quot;Bob&quot;</span>, 
+        <span style="color: #BA2121">&quot;Marry&quot;</span>, [ <span style="color: #666666">100</span>, <span style="color: #666666">101</span>, <span style="color: #BA2121">&quot;Tom&quot;</span>, <span style="color: #BA2121">&quot;Mike&quot;</span> ], <span style="color: #BA2121">&quot;throw&quot;</span>, <span style="color: #BA2121">&quot;run&quot;</span> ]
+
+<span style="color: #408080; font-style: italic">#Accessing elements of a list</span>
+<span style="color: #008000; font-weight: bold">print</span>( lst[<span style="color: #666666">0</span>], lst[<span style="color: #666666">3</span>] ) <span style="color: #408080; font-style: italic"># 0-indexed</span>
+<span style="color: #008000; font-weight: bold">print</span>( lst[<span style="color: #666666">-1</span>], lst[<span style="color: #666666">-2</span>] ) <span style="color: #408080; font-style: italic"># negative from end of list</span>
+<span style="color: #008000; font-weight: bold">print</span>( lst[<span style="color: #666666">3</span>:<span style="color: #666666">6</span>] )
+<span style="color: #008000; font-weight: bold">print</span>( lst[ <span style="color: #666666">-3</span>:<span style="color: #666666">-1</span>] ) <span style="color: #408080; font-style: italic"># Last element is not included</span>
+<span style="color: #008000; font-weight: bold">print</span>( lst[ <span style="color: #666666">-1</span>:<span style="color: #666666">-3</span>] ) <span style="color: #408080; font-style: italic"># No implicit list reversal</span>
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-c3ce9114-8745-4cca-99db-4b6ebb81b5ea" ><span id="id-c3ce9114-8745-4cca-99db-4b6ebb81b5ea"><img id="img-id-c3ce9114-8745-4cca-99db-4b6ebb81b5ea"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-db4d1d9e-c395-4ac1-9a7a-073c8e101fef" ><span id="id-db4d1d9e-c395-4ac1-9a7a-073c8e101fef"><img id="img-id-db4d1d9e-c395-4ac1-9a7a-073c8e101fef" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00008_frag_00001" data-state="slide_00008_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;This is statement 1&quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;This is statement 2&quot;</span>)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-c6419dab-0e13-4796-a302-daede691a332" ><span id="id-c6419dab-0e13-4796-a302-daede691a332"><img id="img-id-c6419dab-0e13-4796-a302-daede691a332"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-0cc9cf3b-09da-47f6-8376-d6b03866f9f8" ><span id="id-0cc9cf3b-09da-47f6-8376-d6b03866f9f8"><img id="img-id-0cc9cf3b-09da-47f6-8376-d6b03866f9f8" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00009_frag_00001" data-state="slide_00009_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div style="font-size:0.5em">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span>lst <span style="color: #666666">=</span> [ <span style="color: #666666">1</span>, <span style="color: #666666">3</span>, <span style="color: #666666">5</span>, <span style="color: #666666">7</span>, <span style="color: #666666">9</span> ]
+<span style="color: #008000; font-weight: bold">for</span> x <span style="color: #AA22FF; font-weight: bold">in</span> lst: <span style="color: #408080; font-style: italic"># Blocks are marked with :, spaces/tabs are significant </span>
+  <span style="color: #008000; font-weight: bold">print</span>( <span style="color: #BA2121">&#39;x=&#39;</span>, x )
+  
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>( <span style="color: #666666">3</span> ): <span style="color: #408080; font-style: italic"># range(start, stop, step) to generate a list of elements from start to stop - 1 with step</span>
+  <span style="color: #008000; font-weight: bold">print</span>( <span style="color: #BA2121">&#39;i=&#39;</span>, i )
+  <span style="color: #008000; font-weight: bold">for</span> j <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>( <span style="color: #666666">2</span> ):
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;j=&#39;</span>,j, <span style="color: #BA2121">&quot; &quot;</span>, end<span style="color: #666666">=</span><span style="color: #BA2121">&quot;&quot;</span>)
+  <span style="color: #008000; font-weight: bold">print</span>()
+
+lst <span style="color: #666666">=</span> [ <span style="color: #BA2121">&quot;Tom&quot;</span>, <span style="color: #BA2121">&quot;Marry&quot;</span>, <span style="color: #BA2121">&quot;Jim&quot;</span>, <span style="color: #BA2121">&quot;Mike&quot;</span>]
+<span style="color: #008000; font-weight: bold">while</span>( <span style="color: #008000">len</span>( lst ) <span style="color: #666666">&gt;</span> <span style="color: #666666">0</span> ): <span style="color: #408080; font-style: italic"># len(lst) returns number of entries in the list</span>
+  <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;lst&#39;</span>, lst )
+  lst <span style="color: #666666">=</span> lst[<span style="color: #666666">0</span>:<span style="color: #666666">-1</span>] 
+  
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-93bb3318-c3b6-4a13-9bc5-02c861e0b9fa" ><span id="id-93bb3318-c3b6-4a13-9bc5-02c861e0b9fa"><img id="img-id-93bb3318-c3b6-4a13-9bc5-02c861e0b9fa"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-ea03cd7c-7755-49bb-b1f3-d497a0702481" ><span id="id-ea03cd7c-7755-49bb-b1f3-d497a0702481"><img id="img-id-ea03cd7c-7755-49bb-b1f3-d497a0702481" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00010_frag_00001" data-state="slide_00010_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic">#include &lt;iostream&gt;</span>
+<span style="color: #408080; font-style: italic"># ...</span>
+<span style="color: #408080; font-style: italic"># int i;</span>
+<span style="color: #408080; font-style: italic"># for( i = 0; i &lt; 3; i++ ); {</span>
+<span style="color: #408080; font-style: italic">#    std::cout &lt;&lt; &quot;i=&quot; &lt;&lt; i &lt;&lt; std::endl;</span>
+<span style="color: #408080; font-style: italic"># }</span>
+<span style="color: #408080; font-style: italic">#...</span>
+<span style="color: #408080; font-style: italic">#</span>
+<span style="color: #408080; font-style: italic"># prints i=3 only</span>
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-04e78cad-5d19-44d2-848f-963852910404" ><span id="id-04e78cad-5d19-44d2-848f-963852910404"><img id="img-id-04e78cad-5d19-44d2-848f-963852910404"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-ea1ce6fb-9314-463c-b7db-4e893b1cb696" ><span id="id-ea1ce6fb-9314-463c-b7db-4e893b1cb696"><img id="img-id-ea1ce6fb-9314-463c-b7db-4e893b1cb696" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00011_frag_00001" data-state="slide_00011_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="significant-whitespace">
+<h1 class="title">Significant Whitespace</h1>
+<div class="jb-text docutils container">
+<p>C++ code is wrong, but hard to find the error</p>
+<p>C++ uses ; and { } to indicate groupings</p>
+<p>But programmer uses indentation</p>
+<p>In Python, both programmer and interpreter use the same view of the program</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-3f54d6c3-feb3-4885-b2be-f3fdce1d542f" ><span id="id-3f54d6c3-feb3-4885-b2be-f3fdce1d542f"><img id="img-id-3f54d6c3-feb3-4885-b2be-f3fdce1d542f"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-445eb2a9-d57d-43b7-ab7f-0fc816b16be3" ><span id="id-445eb2a9-d57d-43b7-ab7f-0fc816b16be3"><img id="img-id-445eb2a9-d57d-43b7-ab7f-0fc816b16be3" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00012_frag_00001" data-state="slide_00012_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="list-manipulations">
+<h1 class="title">List Manipulations</h1>
+<div class="jb-text docutils container">
+<p>Write a python program that returns a list of every k'th element</p>
+<p>lst = [ 1, 2, 3, 4, 5, 6, 7 ]</p>
+<p>k = 4</p>
+<p>=&gt; [ 1, 5 ]</p>
+<p>k = 2</p>
+<p>=&gt; [ 1, 3, 5, 7 ]</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-af8d66b7-c093-4de7-a061-3895e90ce912" ><span id="id-af8d66b7-c093-4de7-a061-3895e90ce912"><img id="img-id-af8d66b7-c093-4de7-a061-3895e90ce912"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-c38ee273-bebe-4336-8172-4f916341b3ba" ><span id="id-c38ee273-bebe-4336-8172-4f916341b3ba"><img id="img-id-c38ee273-bebe-4336-8172-4f916341b3ba" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00013_frag_00001" data-state="slide_00013_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span>lst <span style="color: #666666">=</span> [ <span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span>, <span style="color: #666666">4</span>, <span style="color: #666666">5</span>, <span style="color: #666666">6</span>, <span style="color: #666666">7</span> ]
+k <span style="color: #666666">=</span> <span style="color: #666666">3</span>
+l2 <span style="color: #666666">=</span> []
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">0</span>, <span style="color: #008000">len</span>(lst), k ):
+  l2<span style="color: #666666">.</span>append( lst[i] )
+<span style="color: #008000; font-weight: bold">print</span>(l2)
+
+<span style="color: #008000; font-weight: bold">print</span>( lst[::k] ) <span style="color: #408080; font-style: italic"># lst[0:len(lst):k]</span>
+
+k <span style="color: #666666">=</span> <span style="color: #666666">3</span>
+l2 <span style="color: #666666">=</span> []
+<span style="color: #008000; font-weight: bold">for</span> el <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+  <span style="color: #008000; font-weight: bold">if</span> el <span style="color: #666666">%</span> k <span style="color: #666666">==</span> <span style="color: #666666">0</span>:
+    l2<span style="color: #666666">.</span>append( lst[el] )
+<span style="color: #008000; font-weight: bold">print</span>(l2)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-25495bf5-c634-485a-894d-542e2606cd40" ><span id="id-25495bf5-c634-485a-894d-542e2606cd40"><img id="img-id-25495bf5-c634-485a-894d-542e2606cd40"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-f8621978-1a2a-4d3f-bf36-c5d8ecb7500e" ><span id="id-f8621978-1a2a-4d3f-bf36-c5d8ecb7500e"><img id="img-id-f8621978-1a2a-4d3f-bf36-c5d8ecb7500e" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00014_frag_00001" data-state="slide_00014_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Create a program that prints out a multiplication table for 0 to 9</span>
+
+<span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot;    &quot;</span>, end<span style="color: #666666">=</span><span style="color: #BA2121">&quot;&quot;</span>)
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>( <span style="color: #666666">1</span>, <span style="color: #666666">10</span> ):
+  <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot; {num:2d} &quot;</span><span style="color: #666666">.</span>format(num<span style="color: #666666">=</span>i), end<span style="color: #666666">=</span><span style="color: #BA2121">&quot;&quot;</span> )
+<span style="color: #008000; font-weight: bold">print</span>()
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>( <span style="color: #666666">1</span>, <span style="color: #666666">10</span> ):
+  <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot; {num:2d} &quot;</span><span style="color: #666666">.</span>format(num<span style="color: #666666">=</span>i), end<span style="color: #666666">=</span><span style="color: #BA2121">&quot;&quot;</span> )
+  <span style="color: #008000; font-weight: bold">for</span> j <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">1</span>, i<span style="color: #666666">+1</span> ):
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&quot; {product:2d} &quot;</span><span style="color: #666666">.</span>format(product<span style="color: #666666">=</span>i<span style="color: #666666">*</span>j), end<span style="color: #666666">=</span><span style="color: #BA2121">&quot;&quot;</span> )
+  <span style="color: #008000; font-weight: bold">print</span>()
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-3d757178-ae7d-4bf5-98af-e17bcf4f87f3" ><span id="id-3d757178-ae7d-4bf5-98af-e17bcf4f87f3"><img id="img-id-3d757178-ae7d-4bf5-98af-e17bcf4f87f3"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-0c4bb5e3-4b36-4a6e-923a-f9de6fc07e95" ><span id="id-0c4bb5e3-4b36-4a6e-923a-f9de6fc07e95"><img id="img-id-0c4bb5e3-4b36-4a6e-923a-f9de6fc07e95" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00015_frag_00001" data-state="slide_00015_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># C++ also has do..while loops</span>
+<span style="color: #408080; font-style: italic"># ...</span>
+<span style="color: #408080; font-style: italic"># int x = 3;</span>
+<span style="color: #408080; font-style: italic">#</span>
+<span style="color: #408080; font-style: italic"># do {</span>
+<span style="color: #408080; font-style: italic">#    std::cout &lt;&lt; &quot;Message is here&quot;</span>
+<span style="color: #408080; font-style: italic"># } while( x &lt; 1);</span>
+<span style="color: #408080; font-style: italic"># ...</span>
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-ede6c6b0-6c10-4ba4-915f-19643b35b766" ><span id="id-ede6c6b0-6c10-4ba4-915f-19643b35b766"><img id="img-id-ede6c6b0-6c10-4ba4-915f-19643b35b766"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-7bea59c0-33ec-4a2a-85e4-c81d065b8456" ><span id="id-7bea59c0-33ec-4a2a-85e4-c81d065b8456"><img id="img-id-7bea59c0-33ec-4a2a-85e4-c81d065b8456" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="programming_puzzle" data-state="programming_puzzle">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="programming-puzzle">
+<h1 class="title">Programming Puzzle</h1>
+<div class="jb-text docutils container">
+<p>Implement a python program that replaces every element greater than 10 in
+a list with 0, that is it blanks out all entries greater than or
+equal to 10:</p>
+<pre class="literal-block">
+lst = [ 11, 3, 200, -9 ] =&gt; [ 0, 3, 0, -9 ]
+</pre>
+<p>But you cannot use <tt class="docutils literal"><span class="pre">if..elif..else</span></tt> statement</p>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-35e4a713-6e7d-48fe-8731-a7464e70741e" ><span id="id-35e4a713-6e7d-48fe-8731-a7464e70741e"><img id="img-id-35e4a713-6e7d-48fe-8731-a7464e70741e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-cee4f9d0-e0be-4248-aaf2-f56d6b4036ef" ><span id="id-cee4f9d0-e0be-4248-aaf2-f56d6b4036ef"><img id="img-id-cee4f9d0-e0be-4248-aaf2-f56d6b4036ef" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00017_frag_00001" data-state="slide_00017_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span>lst <span style="color: #666666">=</span> [ <span style="color: #666666">11</span>, <span style="color: #666666">3</span>, <span style="color: #666666">200</span>, <span style="color: #666666">-9</span> ]
+nlst <span style="color: #666666">=</span> []
+
+<span style="color: #008000; font-weight: bold">for</span> el <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+  diff <span style="color: #666666">=</span> el <span style="color: #666666">-</span> <span style="color: #666666">10</span>
+  y <span style="color: #666666">=</span> diff<span style="color: #666666">/</span><span style="color: #008000">abs</span>(diff)
+  ny <span style="color: #666666">=</span> ( y <span style="color: #666666">+</span> <span style="color: #666666">1.0</span> ) <span style="color: #666666">/</span> <span style="color: #666666">2</span>
+  nlst<span style="color: #666666">.</span>append( ny <span style="color: #666666">*</span> <span style="color: #666666">0</span> <span style="color: #666666">+</span> ( <span style="color: #666666">1-</span> ny ) <span style="color: #666666">*</span> el )
+  <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;el&#39;</span>, el, <span style="color: #BA2121">&#39;diff&#39;</span>, diff, <span style="color: #BA2121">&#39;y&#39;</span>, y, <span style="color: #BA2121">&#39;ny&#39;</span>, ny )
+
+<span style="color: #008000; font-weight: bold">print</span>(nlst)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-c2854282-da3e-4488-83cc-9da66c0868cb" ><span id="id-c2854282-da3e-4488-83cc-9da66c0868cb"><img id="img-id-c2854282-da3e-4488-83cc-9da66c0868cb"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-d246ffa2-1b72-4e2a-a6dc-7657df678a8a" ><span id="id-d246ffa2-1b72-4e2a-a6dc-7657df678a8a"><img id="img-id-d246ffa2-1b72-4e2a-a6dc-7657df678a8a" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb "This kind of computation (replacing if..then.else with formulas)"
+
+
+jb "is important in modern processors"
+
+
+jb "Remember what a processor has to when executing an instruction"
+
+
+jb "For example: MUL AX, [BX]"
+
+
+jb "First the instructions must be loaded from memory, then decoded"
+
+
+jb "then we fetch the operands, then we execute the instruction,"
+
+
+jb "then we finally store the result"
+
+
+jb "Modern processors are hyper-scalar architectures with deep pipelines."
+</aside>
+
+
+
+</section>
+<section id="slide_00018_frag_00001" data-state="slide_00018_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="branches-and-security">
+<h1 class="title">Branches and Security</h1>
+<div class="jb-text docutils container">
+<p>Branches are also potential security risks, because they allow
+side-channel attacks</p>
+<p>Here is a simple routine to check if the password is correct:</p>
+<pre class="literal-block">
+for i in range( len( user_input ) ):
+  if ( password[i] != user_input[i] ):
+    return False
+return True
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-16f77ea9-1b42-4737-a5b2-23c5b14337b4" ><span id="id-16f77ea9-1b42-4737-a5b2-23c5b14337b4"><img id="img-id-16f77ea9-1b42-4737-a5b2-23c5b14337b4"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-0b716353-1cea-4403-b93d-cb4c10dc9aa1" ><span id="id-0b716353-1cea-4403-b93d-cb4c10dc9aa1"><img id="img-id-0b716353-1cea-4403-b93d-cb4c10dc9aa1" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb "This code is insecure. It is susceptible to timing attacks"
+jb "If I enter \"abc\" and the routine returns after 300ns, and"
+jb "I now enter \"1bc\" and the routine returns after 350ns, then"
+jb "I know what the first character is"
+</aside>
+
+
+
+</section>
+<section id="slide_00019_frag_00001" data-state="slide_00019_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span>user_input <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;abc&quot;</span>
+password <span style="color: #666666">=</span> <span style="color: #BA2121">&quot;abD&quot;</span>
+
+correct <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>( <span style="color: #008000">len</span>( user_input ) ):
+  <span style="color: #008000; font-weight: bold">if</span> ( password[i] <span style="color: #666666">==</span> user_input[i] ):
+    correct <span style="color: #666666">=</span> correct <span style="color: #666666">+</span> <span style="color: #666666">1</span>
+result <span style="color: #666666">=</span> correct <span style="color: #666666">==</span> <span style="color: #008000">len</span>(user_input)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-4712efd3-e2cb-4612-a486-da4fe9f13fc7" ><span id="id-4712efd3-e2cb-4612-a486-da4fe9f13fc7"><img id="img-id-4712efd3-e2cb-4612-a486-da4fe9f13fc7"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-a2056205-5ea5-49ce-8796-beb84138b801" ><span id="id-a2056205-5ea5-49ce-8796-beb84138b801"><img id="img-id-a2056205-5ea5-49ce-8796-beb84138b801" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00020_frag_00001" data-state="slide_00020_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span>x <span style="color: #666666">=</span> <span style="color: #666666">4</span>
+y <span style="color: #666666">=</span> <span style="color: #666666">4</span>
+z <span style="color: #666666">=</span> <span style="color: #666666">1</span>
+
+<span style="color: #408080; font-style: italic"># Nested ifs push the indentation to the right</span>
+<span style="color: #008000; font-weight: bold">if</span> x <span style="color: #666666">&lt;</span> <span style="color: #666666">3</span>:
+  <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;x is small&#39;</span>)
+<span style="color: #008000; font-weight: bold">else</span>:
+  <span style="color: #008000; font-weight: bold">if</span> y <span style="color: #666666">&gt;</span> <span style="color: #666666">3</span>:
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;y is large&#39;</span>)
+  <span style="color: #008000; font-weight: bold">else</span>:
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;y is small&#39;</span>)
+  
+<span style="color: #408080; font-style: italic"># Nicer formatting</span>
+<span style="color: #408080; font-style: italic"># Showing boolean connectors and, or, not</span>
+<span style="color: #008000; font-weight: bold">if</span> x <span style="color: #666666">&lt;</span> <span style="color: #666666">3</span> <span style="color: #AA22FF; font-weight: bold">and</span> z <span style="color: #666666">&lt;</span> <span style="color: #666666">2</span>:
+  <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;x is small&#39;</span>)
+<span style="color: #008000; font-weight: bold">elif</span> y <span style="color: #666666">&gt;</span> <span style="color: #666666">3</span>:
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;y is large&#39;</span>)
+<span style="color: #008000; font-weight: bold">else</span>:
+    <span style="color: #008000; font-weight: bold">print</span>(<span style="color: #BA2121">&#39;y is small&#39;</span>)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-4f8cddf3-6e80-4bda-918c-784ed1e21170" ><span id="id-4f8cddf3-6e80-4bda-918c-784ed1e21170"><img id="img-id-4f8cddf3-6e80-4bda-918c-784ed1e21170"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-3ecc16e0-59b9-47d8-8d56-140cb63b1898" ><span id="id-3ecc16e0-59b9-47d8-8d56-140cb63b1898"><img id="img-id-3ecc16e0-59b9-47d8-8d56-140cb63b1898" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00021_frag_00001" data-state="slide_00021_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="program-structure">
+<h1 class="title">Program Structure</h1>
+<div class="jb-text docutils container">
+<p>Functions and subroutines to break program into smaller logical chunks:</p>
+<pre class="literal-block">
+def function( arg1, arg2, arg3 = 42 ):
+  if ( arg1 &gt; 0 ):
+    res = arg1 + arg2 + arg3
+  else:
+    res = arg1
+  return res
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-8e2b4cea-14b3-40f6-b47a-5761a319f0b0" ><span id="id-8e2b4cea-14b3-40f6-b47a-5761a319f0b0"><img id="img-id-8e2b4cea-14b3-40f6-b47a-5761a319f0b0"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-eba3d367-3acc-4ab7-9c89-7eeb6e611035" ><span id="id-eba3d367-3acc-4ab7-9c89-7eeb6e611035"><img id="img-id-eba3d367-3acc-4ab7-9c89-7eeb6e611035" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb """To break large programs up into smaller logical groups, the imperative
+    programming languages use subroutines and/or functions."""
+jb """The function definition looks very similar to C++, Java, and other imperative
+    languages."""
+jb "But the arguments are not typed (e.g., int arg1, std::vector<Point3D> arg2, ...)"
+jb "That is because Python is a dynamic programming language and arguments are only"
+jb "checked at runtime."
+
+
+jb "Python also supports namespaces and modules using the import function"
+jb "The import functions are quite powerful and flexible"
+</aside>
+
+
+
+</section>
+<section id="slide_00022_frag_00001" data-state="slide_00022_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># A small function to count the number of a set of chars in a string</span>
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">countChars</span>( message, fset<span style="color: #666666">=</span><span style="color: #BA2121">&quot;aeiou&quot;</span> ):
+  count <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+  <span style="color: #008000; font-weight: bold">for</span> el <span style="color: #AA22FF; font-weight: bold">in</span> message:
+    <span style="color: #008000; font-weight: bold">if</span> el <span style="color: #AA22FF; font-weight: bold">in</span> fset:
+      count <span style="color: #666666">=</span> count <span style="color: #666666">+</span> <span style="color: #666666">1</span>
+  <span style="color: #008000; font-weight: bold">return</span> count
+
+<span style="color: #008000; font-weight: bold">print</span>( countChars(<span style="color: #BA2121">&quot;Hello World&quot;</span>, <span style="color: #BA2121">&quot;o&quot;</span> ) )
+<span style="color: #008000; font-weight: bold">print</span>( countChars(<span style="color: #BA2121">&quot;I study at NKUST&quot;</span> ) )
+
+  
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-61f09868-9377-4153-b352-292179b8daab" ><span id="id-61f09868-9377-4153-b352-292179b8daab"><img id="img-id-61f09868-9377-4153-b352-292179b8daab"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-1014fb37-add9-4530-b0df-493b40070d04" ><span id="id-1014fb37-add9-4530-b0df-493b40070d04"><img id="img-id-1014fb37-add9-4530-b0df-493b40070d04" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb "This example shows the use of default arguments"
+jb "It also shows the use of the \"in\" function"
+jb "which returns true if the element is a member of the list or similar iterable"
+</aside>
+
+
+
+</section>
+<section id="slide_00023_frag_00001" data-state="slide_00023_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="python-programming-puzzle">
+<h1 class="title">Python Programming Puzzle</h1>
+<div class="jb-text docutils container">
+<p>Implement a python routine that checks if all entries in a set are
+included in a lst:</p>
+<pre class="literal-block">
+def checkIncludes( lst, fset = [ 1, 2, 3 ] ):
+  ...
+
+checkIncludes( [ 1, 1, 2, 4, 3 ] ) =&gt; True
+checkIncludes( [ 1, 5, 4, 5 ], [1,2,5] ) =&gt; False
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-823390a1-a98d-4fee-b8ce-e2f5c8dc2b3e" ><span id="id-823390a1-a98d-4fee-b8ce-e2f5c8dc2b3e"><img id="img-id-823390a1-a98d-4fee-b8ce-e2f5c8dc2b3e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-03c70fd4-69a8-41dd-af8c-645040d07945" ><span id="id-03c70fd4-69a8-41dd-af8c-645040d07945"><img id="img-id-03c70fd4-69a8-41dd-af8c-645040d07945" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00024_frag_00001" data-state="slide_00024_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">peval</span>( s ):
+  <span style="color: #008000; font-weight: bold">print</span>(s, <span style="color: #BA2121">&#39;=&gt;&#39;</span>, <span style="color: #008000">eval</span>(s) )
+  
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">checkIncludes</span>( lst, fset <span style="color: #666666">=</span> [ <span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span> ] ):
+  res <span style="color: #666666">=</span> <span style="color: #008000">True</span>
+  <span style="color: #008000; font-weight: bold">for</span> f <span style="color: #AA22FF; font-weight: bold">in</span> fset:
+    <span style="color: #008000; font-weight: bold">if</span> f <span style="color: #AA22FF; font-weight: bold">not</span> <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+      res <span style="color: #666666">=</span> <span style="color: #008000">False</span>
+      <span style="color: #008000; font-weight: bold">break</span>
+  <span style="color: #008000; font-weight: bold">return</span> res
+
+peval(<span style="color: #BA2121">&quot;checkIncludes( [ 1, 1, 2, 4, 3 ] )&quot;</span>)
+peval(<span style="color: #BA2121">&quot;checkIncludes( [ 1, 5, 4, 5 ], [1,2,5] )&quot;</span>)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-64a37388-316b-4168-8d57-214ce3351bac" ><span id="id-64a37388-316b-4168-8d57-214ce3351bac"><img id="img-id-64a37388-316b-4168-8d57-214ce3351bac"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-aca33456-6865-401c-bd60-874f1e831334" ><span id="id-aca33456-6865-401c-bd60-874f1e831334"><img id="img-id-aca33456-6865-401c-bd60-874f1e831334" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00025_frag_00001" data-state="slide_00025_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">checkIncludes</span>( lst, fset <span style="color: #666666">=</span> [ <span style="color: #666666">1</span>, <span style="color: #666666">2</span>, <span style="color: #666666">3</span> ] ):
+  res <span style="color: #666666">=</span> <span style="color: #008000">True</span>
+  <span style="color: #008000; font-weight: bold">for</span> f <span style="color: #AA22FF; font-weight: bold">in</span> fset:
+    fnd <span style="color: #666666">=</span> <span style="color: #008000">False</span>
+    <span style="color: #008000; font-weight: bold">for</span> l <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+      <span style="color: #008000; font-weight: bold">if</span> ( l <span style="color: #666666">==</span> f ):
+        fnd <span style="color: #666666">=</span> <span style="color: #008000">True</span>
+        <span style="color: #008000; font-weight: bold">break</span>  
+    <span style="color: #008000; font-weight: bold">if</span> <span style="color: #AA22FF; font-weight: bold">not</span> fnd:
+      res <span style="color: #666666">=</span> <span style="color: #008000">False</span>
+      <span style="color: #008000; font-weight: bold">break</span>
+  <span style="color: #008000; font-weight: bold">return</span> res
+
+peval(<span style="color: #BA2121">&quot;checkIncludes( [ 1, 1, 2, 4, 3 ] )&quot;</span>)
+peval(<span style="color: #BA2121">&quot;checkIncludes( [ 1, 5, 4, 5 ], [1,2,5] )&quot;</span>)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-f4e195fd-8877-49f1-8b8c-a4fcd1b84c2e" ><span id="id-f4e195fd-8877-49f1-8b8c-a4fcd1b84c2e"><img id="img-id-f4e195fd-8877-49f1-8b8c-a4fcd1b84c2e"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-62469018-a6da-4b3d-8df4-69dfa2eed6a7" ><span id="id-62469018-a6da-4b3d-8df4-69dfa2eed6a7"><img id="img-id-62469018-a6da-4b3d-8df4-69dfa2eed6a7" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00026_frag_00001" data-state="slide_00026_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #408080; font-style: italic"># Differences in accessing lists</span>
+
+lst <span style="color: #666666">=</span> [<span style="color: #BA2121">&quot;a&quot;</span>, <span style="color: #BA2121">&quot;y&quot;</span>, <span style="color: #BA2121">&quot;c&quot;</span>, <span style="color: #BA2121">&quot;f&quot;</span>, <span style="color: #BA2121">&quot;z&quot;</span>]
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>( <span style="color: #008000">len</span>(lst) ):
+  <span style="color: #008000; font-weight: bold">print</span>(i, end<span style="color: #666666">=</span><span style="color: #BA2121">&quot; &quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>()
+<span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+  <span style="color: #008000; font-weight: bold">print</span>(i, end<span style="color: #666666">=</span><span style="color: #BA2121">&quot; &quot;</span>)
+<span style="color: #008000; font-weight: bold">print</span>()
+<span style="color: #408080; font-style: italic">#for i in range(lst):</span>
+<span style="color: #408080; font-style: italic">#  print(i)</span>
+<span style="color: #408080; font-style: italic">#---------------------------------------------------------------------------</span>
+<span style="color: #408080; font-style: italic">#TypeError                                 Traceback (most recent call last)</span>
+<span style="color: #408080; font-style: italic">#&lt;ipython-input-60-6cd91ed17759&gt; in &lt;module&gt;()</span>
+<span style="color: #408080; font-style: italic">#      7   print(i, end=&quot; &quot;)</span>
+<span style="color: #408080; font-style: italic">#      8 print()</span>
+<span style="color: #408080; font-style: italic">#----&gt; 9 for i in range(lst):</span>
+<span style="color: #408080; font-style: italic">#     10   print(i)</span>
+<span style="color: #408080; font-style: italic">#</span>
+<span style="color: #408080; font-style: italic">#TypeError: &#39;list&#39; object cannot be interpreted as an</span>
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-6f7246ff-cc62-4900-a63b-b89482bb2278" ><span id="id-6f7246ff-cc62-4900-a63b-b89482bb2278"><img id="img-id-6f7246ff-cc62-4900-a63b-b89482bb2278"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-924904dc-96ce-4ea7-b6a1-23c05871c033" ><span id="id-924904dc-96ce-4ea7-b6a1-23c05871c033"><img id="img-id-924904dc-96ce-4ea7-b6a1-23c05871c033" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00027_frag_00001" data-state="slide_00027_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="sum-of-all-even-integers">
+<h1 class="title">Sum of All Even Integers</h1>
+<div class="jb-text docutils container">
+<p>Implement a function that returns the sum of all even numbers in a list:</p>
+<pre class="literal-block">
+sumEven( [ 1, 2, 4, -2, 3, -11 ] ) =&gt; 4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-f3e42cac-4240-467c-9ec8-bfa82a1241f9" ><span id="id-f3e42cac-4240-467c-9ec8-bfa82a1241f9"><img id="img-id-f3e42cac-4240-467c-9ec8-bfa82a1241f9"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-cd9f42d0-9bbe-4b59-a344-3413cdb306c3" ><span id="id-cd9f42d0-9bbe-4b59-a344-3413cdb306c3"><img id="img-id-cd9f42d0-9bbe-4b59-a344-3413cdb306c3" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00028_frag_00001" data-state="slide_00028_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">import</span> <span style="color: #0000FF; font-weight: bold">random</span>
+
+<span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">randomIntList</span>( N, <span style="color: #008000">min</span>, <span style="color: #008000">max</span> ):
+  lst <span style="color: #666666">=</span> []
+  <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(N):
+    lst<span style="color: #666666">.</span>append( random<span style="color: #666666">.</span>randint(<span style="color: #008000">min</span>, <span style="color: #008000">max</span>) )
+  <span style="color: #008000; font-weight: bold">return</span> lst
+
+lst <span style="color: #666666">=</span> randomIntList( <span style="color: #666666">5</span>, <span style="color: #666666">-9</span>, <span style="color: #666666">10</span> )
+<span style="color: #008000; font-weight: bold">print</span>(lst)
+</pre></div>
+
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-e99225c3-b2d6-42b1-8c79-1a5543bf5b2c" ><span id="id-e99225c3-b2d6-42b1-8c79-1a5543bf5b2c"><img id="img-id-e99225c3-b2d6-42b1-8c79-1a5543bf5b2c"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-e9000b33-8d42-49a8-bd21-420d42a76f8b" ><span id="id-e9000b33-8d42-49a8-bd21-420d42a76f8b"><img id="img-id-e9000b33-8d42-49a8-bd21-420d42a76f8b" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00029_frag_00001" data-state="slide_00029_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div style="font-size:0.5em">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">sumEven</span>( lst ):
+  <span style="color: #008000">sum</span> <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+  <span style="color: #008000; font-weight: bold">for</span> l <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+    <span style="color: #008000; font-weight: bold">if</span> l <span style="color: #666666">%</span> <span style="color: #666666">2</span> <span style="color: #666666">==</span> <span style="color: #666666">0</span>:
+      <span style="color: #008000">sum</span> <span style="color: #666666">=</span> <span style="color: #008000">sum</span> <span style="color: #666666">+</span> l
+  <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">sum</span>
+
+<span style="color: #008000; font-weight: bold">for</span> k <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">3</span>):
+  peval( <span style="color: #BA2121">&quot;sumEven(&quot;</span> <span style="color: #666666">+</span> <span style="color: #008000">str</span>( randomIntList(<span style="color: #666666">5</span>, <span style="color: #666666">-9</span>, <span style="color: #666666">10</span> ) ) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;)&quot;</span> )
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-e4822ca9-e4c4-4a7c-b566-a1b8f635039a" ><span id="id-e4822ca9-e4c4-4a7c-b566-a1b8f635039a"><img id="img-id-e4822ca9-e4c4-4a7c-b566-a1b8f635039a"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-76f3699b-17de-4725-ba39-65f80cca47e2" ><span id="id-76f3699b-17de-4725-ba39-65f80cca47e2"><img id="img-id-76f3699b-17de-4725-ba39-65f80cca47e2" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00030_frag_00001" data-state="slide_00030_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+
+<div class="jb-output-code jb-render">
+
+<div class="jb-output jb-render">
+<div class="document" id="sum-even-after-odd-numbers">
+<h1 class="title">Sum Even After Odd Numbers</h1>
+<div class="jb-text docutils container">
+<p>Implement a function that returns the sum of all even numbers that follow
+immediately after an odd number in a list:</p>
+<pre class="literal-block">
+sumEvenAfterOdd( [ 1, 2, 4, 7, -2, 3, -11 ] ) =&gt; 0
+
+def sumEvenAfterOdd( lst ):
+  ...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-af1add80-96b8-4019-8b22-6446f2046df0" ><span id="id-af1add80-96b8-4019-8b22-6446f2046df0"><img id="img-id-af1add80-96b8-4019-8b22-6446f2046df0"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-099ab6c0-1dfa-4260-bc5a-5a076dec6677" ><span id="id-099ab6c0-1dfa-4260-bc5a-5a076dec6677"><img id="img-id-099ab6c0-1dfa-4260-bc5a-5a076dec6677" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+</aside>
+
+
+
+</section>
+<section id="slide_00031_frag_00001" data-state="slide_00031_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div style="font-size:0.5em">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">sumEvenAfterOdd</span>( lst ):
+  <span style="color: #008000">sum</span> <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+  <span style="color: #008000; font-weight: bold">for</span> i <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">1</span>, <span style="color: #008000">len</span>(lst)):
+    <span style="color: #008000; font-weight: bold">if</span> lst[i] <span style="color: #666666">%</span> <span style="color: #666666">2</span> <span style="color: #666666">==</span> <span style="color: #666666">0</span> <span style="color: #AA22FF; font-weight: bold">and</span> lst[i<span style="color: #666666">-1</span>] <span style="color: #666666">%</span> <span style="color: #666666">2</span> <span style="color: #666666">!=</span> <span style="color: #666666">0</span>:
+      <span style="color: #008000">sum</span> <span style="color: #666666">=</span> <span style="color: #008000">sum</span> <span style="color: #666666">+</span> lst[i]
+  <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">sum</span>
+
+<span style="color: #008000; font-weight: bold">for</span> k <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">3</span>):
+  peval( <span style="color: #BA2121">&quot;sumEvenAfterOdd(&quot;</span> <span style="color: #666666">+</span> <span style="color: #008000">str</span>( randomIntList(<span style="color: #666666">5</span>, <span style="color: #666666">-9</span>, <span style="color: #666666">10</span> ) ) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;)&quot;</span> )
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-762b23d0-98f2-4d36-9a7e-78174ced650c" ><span id="id-762b23d0-98f2-4d36-9a7e-78174ced650c"><img id="img-id-762b23d0-98f2-4d36-9a7e-78174ced650c"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-80db96cb-5cbd-453e-8265-3aae85598574" ><span id="id-80db96cb-5cbd-453e-8265-3aae85598574"><img id="img-id-80db96cb-5cbd-453e-8265-3aae85598574" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb """Since we need to look at our neighbors in the list. It is
+      better to use the index i (for i in range(len(lst) - 1)),
+      since we can then peek at the next number easily.
+   """
+</aside>
+
+
+
+</section>
+<section id="slide_00032_frag_00001" data-state="slide_00032_frag_00001">
+
+
+<!-- Header -->
+  
+
+<!-- Background -->
+
+
+<!-- Slide -->
+<div class="jb-slide">
+<div class="jb-input jb-render jb-code" style="text-align:center">
+
+<div class="jb-input-code jb-render">
+<div style="font-size:0.5em">
+<div class="highlight" style="background: #f8f8f8; color:#101010;display=inline-block;"><pre style="line-height: 125%"><span></span><span style="color: #008000; font-weight: bold">def</span> <span style="color: #0000FF">sumEvenAfterOdd</span>( lst ):
+  <span style="color: #008000">sum</span> <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+  prev <span style="color: #666666">=</span> <span style="color: #666666">0</span>
+  <span style="color: #008000; font-weight: bold">for</span> el <span style="color: #AA22FF; font-weight: bold">in</span> lst:
+    <span style="color: #008000; font-weight: bold">if</span> el <span style="color: #666666">%</span> <span style="color: #666666">2</span> <span style="color: #666666">==</span> <span style="color: #666666">0</span> <span style="color: #AA22FF; font-weight: bold">and</span> prev <span style="color: #666666">%</span> <span style="color: #666666">2</span> <span style="color: #666666">!=</span> <span style="color: #666666">0</span>:
+      <span style="color: #008000">sum</span> <span style="color: #666666">=</span> <span style="color: #008000">sum</span> <span style="color: #666666">+</span> el
+    prev <span style="color: #666666">=</span> el
+  <span style="color: #008000; font-weight: bold">return</span> <span style="color: #008000">sum</span>
+
+<span style="color: #008000; font-weight: bold">for</span> k <span style="color: #AA22FF; font-weight: bold">in</span> <span style="color: #008000">range</span>(<span style="color: #666666">3</span>):
+  peval( <span style="color: #BA2121">&quot;sumEvenAfterOdd(&quot;</span> <span style="color: #666666">+</span> <span style="color: #008000">str</span>( randomIntList(<span style="color: #666666">5</span>, <span style="color: #666666">-9</span>, <span style="color: #666666">10</span> ) ) <span style="color: #666666">+</span> <span style="color: #BA2121">&quot;)&quot;</span> )
+</pre></div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+<!-- Footer -->
+
+<div class="jb-footer-left">
+    <span id="{id-084d3dd0-f59f-4809-95bf-2d4055332efd" ><span id="id-084d3dd0-f59f-4809-95bf-2d4055332efd"><img id="img-id-084d3dd0-f59f-4809-95bf-2d4055332efd"     src="assets/images/logo.png"/></span>
+</span>
+
+</div>
+<div class="jb-footer-right">
+    <span id="{id-bd191806-bda5-4156-b3ba-016396a2c4c7" ><span id="id-bd191806-bda5-4156-b3ba-016396a2c4c7"><img id="img-id-bd191806-bda5-4156-b3ba-016396a2c4c7" width=162 height=138   src="assets/images/robbi.png"/></span>
+</span>
+
+</div>
+
+<aside class="notes">
+
+
+
+jb "This version of the program uses a for-each loop, but remembers"
+jb """the previous element. It is slightly more efficient and elegant than 
+      the first version"""
+</aside>
+
+
+
+</section>
+        </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                math: {
+                    mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+                    config: 'TeX-AMS_HTML-full',  // See http://docs.mathjax.org/en/latest/config-files.html
+                },
+
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/math/math.js', async: true }
+                ]
+            });
+		
+            // MathJax.Hub.Config({
+            //             // pass other options into `MathJax.Hub.Config()`
+            //     'tex2jax': {
+            //         'inlineMath': [['$', '$'], ['\\(', '\\)']],
+            //         'displayMath': [['$$', '$$'], ['\\[', '\\]']],
+            //         'processEscapes': true,
+            //         'processEnvironments': true,
+            //         'skipTags': ['script', 'noscript', 'style', 'textarea', 'code'],
+            //         'displayAlign': 'center',
+            //     },
+            //     'HTML-CSS': {
+            //         'styles': {'.MathJax_Display': {'margin': 0}},
+            //         'linebreaks': {'automatic': true},
+            //         // Disable to prevent OTF font loading, which aren't part of our
+            //         // distribution.
+            //         'imageFont': null,
+            //     },
+            //     'messageStyle': 'none',
+            //     'TeX': { 'Macros': 'macros' }	    
+            // });
+            // mathjax.Hub.Configured();
+        </script>
+        <script>
+            <!-- Assets -->
+var assets = {
+"robbi" : new JBImage( "robbi", "12677", "162", "138", "None", null, "assets/images/robbi", "png" ),
+"logo" : new JBImage( "logo", "12033", "0", "0", "None", null, "assets/images/logo", "png" ),
+"fira-logo-1" : new JBImage( "fira-logo-1", "93836", "0", "0", "None", null, "assets/images/FIRA-logo-1", "png" ),
+"pairLogo" : new JBImage( "pairLogo", "63051", "0", "0", "None", null, "assets/images/pairLogo", "png" ) 
+};
+var assetInstances = {
+    "id-82973f8b-bbc3-4139-9974-6e47ccb5421c": assets["robbi"],
+    "id-dcc4f891-f7ed-4e5a-a84c-e3d379c59c76": assets["robbi"],
+    "id-6edd5cf8-15a0-4312-9945-8990e16cf427": assets["robbi"],
+    "id-c176f133-566e-4a0f-9239-05374386a584": assets["robbi"],
+    "id-86e5462c-ed86-42fe-afdb-898c5cc9a716": assets["robbi"],
+    "id-db4d1d9e-c395-4ac1-9a7a-073c8e101fef": assets["robbi"],
+    "id-0cc9cf3b-09da-47f6-8376-d6b03866f9f8": assets["robbi"],
+    "id-ea03cd7c-7755-49bb-b1f3-d497a0702481": assets["robbi"],
+    "id-ea1ce6fb-9314-463c-b7db-4e893b1cb696": assets["robbi"],
+    "id-445eb2a9-d57d-43b7-ab7f-0fc816b16be3": assets["robbi"],
+    "id-c38ee273-bebe-4336-8172-4f916341b3ba": assets["robbi"],
+    "id-f8621978-1a2a-4d3f-bf36-c5d8ecb7500e": assets["robbi"],
+    "id-0c4bb5e3-4b36-4a6e-923a-f9de6fc07e95": assets["robbi"],
+    "id-7bea59c0-33ec-4a2a-85e4-c81d065b8456": assets["robbi"],
+    "id-cee4f9d0-e0be-4248-aaf2-f56d6b4036ef": assets["robbi"],
+    "id-d246ffa2-1b72-4e2a-a6dc-7657df678a8a": assets["robbi"],
+    "id-0b716353-1cea-4403-b93d-cb4c10dc9aa1": assets["robbi"],
+    "id-a2056205-5ea5-49ce-8796-beb84138b801": assets["robbi"],
+    "id-3ecc16e0-59b9-47d8-8d56-140cb63b1898": assets["robbi"],
+    "id-eba3d367-3acc-4ab7-9c89-7eeb6e611035": assets["robbi"],
+    "id-1014fb37-add9-4530-b0df-493b40070d04": assets["robbi"],
+    "id-03c70fd4-69a8-41dd-af8c-645040d07945": assets["robbi"],
+    "id-aca33456-6865-401c-bd60-874f1e831334": assets["robbi"],
+    "id-62469018-a6da-4b3d-8df4-69dfa2eed6a7": assets["robbi"],
+    "id-924904dc-96ce-4ea7-b6a1-23c05871c033": assets["robbi"],
+    "id-cd9f42d0-9bbe-4b59-a344-3413cdb306c3": assets["robbi"],
+    "id-e9000b33-8d42-49a8-bd21-420d42a76f8b": assets["robbi"],
+    "id-76f3699b-17de-4725-ba39-65f80cca47e2": assets["robbi"],
+    "id-099ab6c0-1dfa-4260-bc5a-5a076dec6677": assets["robbi"],
+    "id-80db96cb-5cbd-453e-8265-3aae85598574": assets["robbi"],
+    "id-bd191806-bda5-4156-b3ba-016396a2c4c7": assets["robbi"],
+    "id-70feca27-7b65-4277-8613-b36dd9717bbd": assets["logo"],
+    "id-4515b4a0-c672-436c-b8c0-8865e2da1dfa": assets["logo"],
+    "id-4064cd6c-e3b4-49cb-8db7-95d8bfa6e2e4": assets["logo"],
+    "id-3c8cef72-17cb-487f-8206-ebcc10f3e4ca": assets["logo"],
+    "id-85982834-212c-44a9-8555-64c3729049d1": assets["logo"],
+    "id-c3ce9114-8745-4cca-99db-4b6ebb81b5ea": assets["logo"],
+    "id-c6419dab-0e13-4796-a302-daede691a332": assets["logo"],
+    "id-93bb3318-c3b6-4a13-9bc5-02c861e0b9fa": assets["logo"],
+    "id-04e78cad-5d19-44d2-848f-963852910404": assets["logo"],
+    "id-3f54d6c3-feb3-4885-b2be-f3fdce1d542f": assets["logo"],
+    "id-af8d66b7-c093-4de7-a061-3895e90ce912": assets["logo"],
+    "id-25495bf5-c634-485a-894d-542e2606cd40": assets["logo"],
+    "id-3d757178-ae7d-4bf5-98af-e17bcf4f87f3": assets["logo"],
+    "id-ede6c6b0-6c10-4ba4-915f-19643b35b766": assets["logo"],
+    "id-35e4a713-6e7d-48fe-8731-a7464e70741e": assets["logo"],
+    "id-c2854282-da3e-4488-83cc-9da66c0868cb": assets["logo"],
+    "id-16f77ea9-1b42-4737-a5b2-23c5b14337b4": assets["logo"],
+    "id-4712efd3-e2cb-4612-a486-da4fe9f13fc7": assets["logo"],
+    "id-4f8cddf3-6e80-4bda-918c-784ed1e21170": assets["logo"],
+    "id-8e2b4cea-14b3-40f6-b47a-5761a319f0b0": assets["logo"],
+    "id-61f09868-9377-4153-b352-292179b8daab": assets["logo"],
+    "id-823390a1-a98d-4fee-b8ce-e2f5c8dc2b3e": assets["logo"],
+    "id-64a37388-316b-4168-8d57-214ce3351bac": assets["logo"],
+    "id-f4e195fd-8877-49f1-8b8c-a4fcd1b84c2e": assets["logo"],
+    "id-6f7246ff-cc62-4900-a63b-b89482bb2278": assets["logo"],
+    "id-f3e42cac-4240-467c-9ec8-bfa82a1241f9": assets["logo"],
+    "id-e99225c3-b2d6-42b1-8c79-1a5543bf5b2c": assets["logo"],
+    "id-e4822ca9-e4c4-4a7c-b566-a1b8f635039a": assets["logo"],
+    "id-af1add80-96b8-4019-8b22-6446f2046df0": assets["logo"],
+    "id-762b23d0-98f2-4d36-9a7e-78174ced650c": assets["logo"],
+    "id-084d3dd0-f59f-4809-95bf-2d4055332efd": assets["logo"]
+};
+<!-- End of Assets -->
+
+            convertURLs(assetInstances, "smart-path");
+        </script>
+        <script>
+            <!-- Characters -->
+var characters =
+{};
+<!-- End of Characters -->
+
+        </script>
+    </body>
+</html>
